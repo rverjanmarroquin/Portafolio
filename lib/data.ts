@@ -1,19 +1,21 @@
 export const profile = {
   name: "Ricardo Verjan Marroquin",
   role: "Desarrollo Full Stack | Análisis de Datos | Marketing Digital",
-  bio: "Apasionado por el desarrollo web y el análisis de datos.",
+  bio: "Apasionado por el desarrollo web, análisis de datos y las tecnologías emergentes.",
   email: "rverjanmarroquin@gmail.com",
   cv: "https://drive.google.com/file/d/1y_AaxabN9vaSZIeRNn7Wmv8YmpEMwaIh/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/ricardo-verján-marroquín-22b839218",
   github: "https://github.com/ricardoverjan",
-}
+};
 
 export const projects = [
   {
     title: "Portafolio Personal",
     titleEn: "Personal Portfolio",
-    description: "Portafolio web interactivo con sistema de temas, multiidioma y diseño responsive.",
-    descriptionEn: "Interactive web portfolio with theme system, multilanguage and responsive design.",
+    description:
+      "Portafolio web interactivo con sistema de temas, multiidioma y diseño responsive.",
+    descriptionEn:
+      "Interactive web portfolio with theme system, multilanguage and responsive design.",
     tags: ["HTML", "CSS", "JavaScript"],
     tagsEn: ["HTML", "CSS", "JavaScript"],
     demo: "",
@@ -34,7 +36,8 @@ export const projects = [
   {
     title: "Dashboard Power BI - Recursos Humanos",
     titleEn: "Power BI Dashboard - Human Resources",
-    description: "Dashboard de Recursos Humanos con análisis de KPIs y métricas empresariales.",
+    description:
+      "Dashboard de Recursos Humanos con análisis de KPIs y métricas empresariales.",
     descriptionEn: "HR Dashboard with KPIs analysis and business metrics.",
     tags: ["Power BI", "DAX", "Data Analytics", "Excel"],
     tagsEn: ["Power BI", "DAX", "Data Analytics", "Excel"],
@@ -42,7 +45,7 @@ export const projects = [
     code: "#",
     image: "/assets/img/powerbi.jpg",
   },
-]
+];
 
 export const skills = [
   { name: "HTML", icon: "fab fa-html5", skill: "html" },
@@ -54,7 +57,7 @@ export const skills = [
   { name: "Python", icon: "fab fa-python", skill: "python" },
   { name: "SQL", icon: "fas fa-database", skill: "sql" },
   { name: "Power BI", icon: "fas fa-chart-pie", skill: "powerbi" },
-]
+];
 
 export const tagMeta: Record<string, { icon: string; color: string }> = {
   HTML: { icon: "fab fa-html5", color: "#E34C26" },
@@ -68,4 +71,4 @@ export const tagMeta: Record<string, { icon: string; color: string }> = {
   DAX: { icon: "fas fa-calculator", color: "#F97316" },
   Excel: { icon: "fas fa-file-excel", color: "#107C41" },
   "Data Analytics": { icon: "fas fa-chart-bar", color: "#22c55e" },
-}
+};

@@ -45,6 +45,19 @@ export const projects = [
     code: "#",
     image: "/assets/img/powerbi.jpg",
   },
+  {
+    title: "Todo App",
+    titleEn: "Todo App",
+    description:
+      "Aplicación para organizar tus tareas fácilmente con recordatorios, filtros y paginación.",
+    descriptionEn:
+      "App to organize tasks easily with reminders, filters and pagination.",
+    tags: ["React", "TypeScript", "Tailwind", "Vite"],
+    tagsEn: ["React", "TypeScript", "Tailwind", "Vite"],
+    demo: "",
+    code: "",
+    image: "/assets/img/todo-app.jpg",
+  },
 ];
 
 export const skills = [
@@ -71,4 +84,8 @@ export const tagMeta: Record<string, { icon: string; color: string }> = {
   DAX: { icon: "fas fa-calculator", color: "#F97316" },
   Excel: { icon: "fas fa-file-excel", color: "#107C41" },
   "Data Analytics": { icon: "fas fa-chart-bar", color: "#22c55e" },
+  React: { icon: "fab fa-react", color: "#61DAFB" },
+  TypeScript: { icon: "fas fa-code", color: "#3178C6" },
+  Tailwind: { icon: "fas fa-wind", color: "#38B2AC" },
+  Vite: { icon: "fas fa-bolt", color: "#646CFF" },
 };

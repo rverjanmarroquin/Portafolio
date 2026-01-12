@@ -52,11 +52,11 @@ export const projects = [
       "Aplicación para organizar tus tareas fácilmente con recordatorios, filtros y paginación.",
     descriptionEn:
       "App to organize tasks easily with reminders, filters and pagination.",
-    tags: ["React", "TypeScript", "Tailwind", "Vite"],
-    tagsEn: ["React", "TypeScript", "Tailwind", "Vite"],
-    demo: "",
+    tags: ["HTML", "CSS", "JavaScript"],
+    tagsEn: ["HTML", "CSS", "JavaScript"],
+    demo: "https://rverjanmarroquin.github.io/LISTA-DE-TAREAS/",
     code: "",
-    image: "/assets/img/todo-app.jpg",
+    image: "/assets/img/todo-app2.jpg",
   },
 ];
 
@@ -70,6 +70,10 @@ export const skills = [
   { name: "Python", icon: "fab fa-python", skill: "python" },
   { name: "SQL", icon: "fas fa-database", skill: "sql" },
   { name: "Power BI", icon: "fas fa-chart-pie", skill: "powerbi" },
+  { name: "React", icon: "fab fa-react", skill: "react" },
+  { name: "TypeScript", icon: "fas fa-code", skill: "typescript" },
+  { name: "Tailwind", icon: "fas fa-wind", skill: "tailwind" },
+  { name: "Vite", icon: "fas fa-bolt", skill: "vite" },
 ];
 
 export const tagMeta: Record<string, { icon: string; color: string }> = {

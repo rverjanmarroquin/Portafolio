@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos y estilos principales del sitio -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio | Ricardo Verjan Marroquin</title>
+    <meta
+      name="description"
+      content="Portafolio web de Ricardo Verjan Marroquin: Full Stack Developer, Data Analyst y Digital Marketing."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/imagen gato.jpg" />
+
+    <!-- Open Graph Meta Tags para redes sociales -->
+    <meta property="og:title" content="Ricardo Verjan Marroquin - Portafolio" />
+    <meta
+      property="og:description"
+      content="Full Stack Developer | Data Analyst | Digital Marketing"
+    />
+    <meta property="og:image" content="assets/img/perfil.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome para iconos de tecnologías -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Contenedor principal que permite al header ser sticky hasta habilidades -->
+    <div class="main-wrapper">
+      <!-- Header y navegación principal (sticky) -->
+      <header class="site-header">
+        <nav class="nav">
+          <!-- Marca/Nombre y botón de menú móvil -->
+          <!-- Icono: reemplaza "👨‍💻" con tu emoji o imagen preferida -->
+          <div class="brand">
+            <img
+              class="brand-icon"
+              src="assets/img/imagen gato.jpg"
+              alt="Avatar"
+            />
+            <span class="brand-text"></span>
+          </div>
+          <!-- Botón para cambiar idioma -->
+          <button
+            class="lang-toggle"
+            aria-label="Cambiar idioma"
+            title="Cambiar idioma"
+          >
+            <span class="lang-label">ES</span>
+          </button>
+          <!-- Botón para cambiar tema (oscuro/claro) -->
+          <button
+            class="theme-toggle"
+            aria-label="Cambiar tema"
+            title="Cambiar tema"
+          >
+            <span class="theme-icon theme-icon-moon">
+              <i class="fas fa-moon"></i>
+            </span>
+            <span class="theme-icon theme-icon-sun">
+              <i class="fas fa-sun"></i>
+            </span>
+          </button>
+          <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+          <!-- Enlaces de navegación a secciones internas -->
+          <ul class="nav-links">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li class="nav-separator"></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li class="nav-separator"></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Contenido principal del portafolio -->
+      <main>
+        <!-- Sección: Sobre mí / Hero -->
+        <section id="sobre-mi" class="section hero">
+          <div class="container hero-container">
+            <!-- Foto de perfil -->
+            <div class="hero-image">
+              <img
+                id="profile-image"
+                src="assets/img/perfil.jpg"
+                alt="Foto de perfil"
+              />
+            </div>
+            <div class="hero-content">
+              <!-- Estos textos se actualizan dinámicamente desde script.js -->
+              <h1 id="profile-name">Tu Nombre</h1>
+              <p id="profile-role" class="role">Desarrollador Web</p>
+              <p id="profile-bio" class="bio">
+                Breve descripción sobre ti y tus objetivos como desarrollador
+                web. Este texto es un placeholder que puedes editar en script.js
+                o directamente aquí.
+              </p>
+              <div class="hero-actions">
+                <a
+                  id="profile-email"
+                  class="btn"
+                  href="mailto:tuemail@example.com"
+                  >Contactar</a
+                >
+                <a
+                  id="profile-cv"
+                  class="btn btn-outline"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  >Ver CV</a
+                >
+              </div>
+              <!-- Redes sociales -->
+              <div class="social-links">
+                <a
+                  id="profile-linkedin"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link social-linkedin"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  id="profile-github"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link social-github"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección: Proyectos (render dinámico) -->
+        <section id="proyectos" class="section">
+          <div class="container">
+            <h2>Proyectos</h2>
+            <p class="section-desc"></p>
+            <!-- Contenedor donde se inyectan tarjetas de proyectos -->
+            <div id="projects-grid" class="grid"></div>
+          </div>
+        </section>
+
+        <!-- Sección: Habilidades (render dinámico) -->
+        <section id="habilidades" class="section">
+          <div class="container">
+            <h2>Habilidades</h2>
+            <p class="section-desc"></p>
+            <!-- Contenedor de cards de habilidades -->
+            <div id="skills-list" class="skills-grid"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer con año automático -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> Ricardo Verjan Marroquin. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Lógica del sitio: datos, render y navegación -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ export const profile = {
   role: "Desarrollo Full Stack | Análisis de Datos | Marketing Digital",
   bio: "Apasionado por el desarrollo web, análisis de datos y las tecnologías emergentes.",
   email: "rverjanmarroquin@gmail.com",
-  cv: "https://drive.google.com/file/d/1y_AaxabN9vaSZIeRNn7Wmv8YmpEMwaIh/view?usp=drive_link",
+  cv: "https://drive.google.com/uc?export=download&id=1y_AaxabN9vaSZIeRNn7Wmv8YmpEMwaIh",
   linkedin: "https://www.linkedin.com/in/ricardo-verján-marroquín-22b839218",
   github: "https://github.com/ricardoverjan",
 };

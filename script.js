@@ -11,7 +11,7 @@ const profile = {
   role: "Desarrollo Full Stack| Análisis de Datos| Marketing Digital",
   bio: "Apasionado por el desarrollo web y el análisis de datos.",
   email: "rverjanmarroquin@gmail.com",
-  cv: "https://drive.google.com/file/d/1y_AaxabN9vaSZIeRNn7Wmv8YmpEMwaIh/view?usp=drive_link",
+  cv: "https://drive.google.com/file/d/1PiqWTCjBVvhieKUoz4BE0Mx5KWstMg2P/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/ricardo-verján-marroquín-22b839218",
   github: "https://github.com/ricardoverjan", // Reemplaza con tu perfil de GitHub
 };
@@ -196,7 +196,7 @@ function renderProfile() {
     document.getElementById("profile-name"),
     profile.name,
     80,
-    7000
+    7000,
   );
 
   document.getElementById("profile-role").textContent =
@@ -392,11 +392,11 @@ function applyStaticText() {
   const aboutLink = document.querySelector('.nav-links a[href="#sobre-mi"]');
   if (aboutLink) aboutLink.textContent = t.nav.about;
   const projectsLink = document.querySelector(
-    '.nav-links a[href="#proyectos"]'
+    '.nav-links a[href="#proyectos"]',
   );
   if (projectsLink) projectsLink.textContent = t.nav.projects;
   const skillsLink = document.querySelector(
-    '.nav-links a[href="#habilidades"]'
+    '.nav-links a[href="#habilidades"]',
   );
   if (skillsLink) skillsLink.textContent = t.nav.skills;
 
@@ -465,7 +465,7 @@ function setupActiveSectionHighlight() {
 
         // Agregar clase activa al link correspondiente
         const activeLink = document.querySelector(
-          `.nav-links a[href="#${entry.target.id}"]`
+          `.nav-links a[href="#${entry.target.id}"]`,
         );
         if (activeLink) {
           activeLink.classList.add("active");
